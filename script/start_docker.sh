@@ -21,4 +21,4 @@ then
     docker kill ${container_name}
     docker rm ${container_name}
 fi
-docker run --network=host -d -e ENV=$ENV --name ${container_name} -v /tmp/django_server:/var/log/django_server ${image_name} $2
+docker run -p 8888:8888 -d -e ENV=$ENV --name ${container_name} -v /tmp/django_server:/var/log/django_server ${image_name} $2
