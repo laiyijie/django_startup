@@ -1,0 +1,4 @@
+*.pyc
+django_server/.idea/
+.idea
+db.sqlite3
