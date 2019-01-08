@@ -32,4 +32,22 @@
 
     docker build . -f Dockerfiles/Dockerfile --tag your_image_name
     
+
+### 工具脚本
+
+支持linux下，使用host模式暴露端口便于使用
+
+#### mongo 
+
+    ./script/start_mongo.sh
+        
+#### elasticsearch [laiyijie/es_deploy](https://github.com/laiyijie/es_deploy)
+
+    source ./script/es_source
+    ./script/start_es_local.sh 
+    ./script/start_kibana_local.sh
     
+    curl 127.0.0.0:9200
+    
+访问 http://127.0.0.1:5601
+
